@@ -1,0 +1,53 @@
+/*
+ * Taller 4 - Sofka U
+ */
+
+/**
+ * Representa una clase Main llamada Main con un método main, la cual esta en 
+ * un proyecto que contie otra clase Main con un método main. Tener un 
+ * proyecto con dos clases Main con métodos main es POSIBLE de ejecutar, 
+ * sin embargo se le tiene que especificar al IDE cual clase desea ejecutar.
+ * 
+ * 
+ * En este proyecto la clase Main ejecuta el cálculo del área de un rectángulo. 
+ * Si se le da ejecutar ahora mismo, calculara efectivamente el área del rectángulo.
+ * Ahora, si se desea ejecutar Main2 para calcular el área de un circulo, lo que 
+ * se debe de hacer es lo siguiente:
+ * 
+ * 1) Hacer click derecho en el proyecto (ejercicio_2 en este caso) y seleccionar 
+ * properties.
+ * 2) Seleccionar la pestaña RUN. En esta pestaña se puede notar que en el campo
+ * MAIN CLASS esta seleccionada la clase Main.
+ * 3. Hacer click en BROWSE y seleccionar la clase Main2. Ok para finalizar.
+ * 
+ * Ahora si ejecuta nuevamente el proyecto, en consola aparecerá el valor del 
+ * área de un circulo. El paso a paso para cambiar de Main Class fue realizado
+ * en el IDE de NetBeans. 
+ * 
+ * @author Santiago Gonzalez - sgi1604@hotmail.com
+ */
+
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /**
+         * Representa el lado menor de un rectángulo. 
+         */
+        int ladoMenor = 5;
+        /**
+         * Representa el lado mayor de un rectángulo. 
+         */
+        int ladoMayor = 10;
+        /**
+         * Ecuación para calcular el área de un rectangulo. 
+         */
+        double areaRectangulo = ladoMayor * ladoMenor;
+        System.out.println ("El área del rectangulo es: " + areaRectangulo);
+
+    }
+    
+}
+
